@@ -1,5 +1,6 @@
 * {
-  font-family: "Segoe UI", sans-sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   color: white;
   margin: 0;
   padding: 0;
@@ -34,9 +35,13 @@ body {
 }
 
 section {
-  width: 100%;
-  overflow-x: hidden;
   padding: 4rem 5%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 0;
 }
 
 .header {
@@ -79,51 +84,65 @@ section {
   display: none;
 }
 
-.main {
+.bg-art-wrapper {
+  position: fixed;
+  right: 0;
+  z-index: -1;
+  filter: blur(100px);
+}
+.bg-art {
+  width: 80vw;
+  height: 80vh;
+  background-image: linear-gradient(0deg, #111827 0%, #4a8caf 100%);
+  opacity: 0.5;
+  clip-path: polygon(41% 83%, 89% 14%, 90% 54%, 68% 83%, 41% 100%, 8% 25%);
+}
+
+.hero {
   width: 100%;
   height: 100vh;
-  background-image: url(images/black.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 15rem 0 0 0;
+  padding: 5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.main .content {
-  padding: 0 2rem;
-}
-
-.content :nth-child(1) {
+.hero-grid :nth-child(1) {
   font-size: 2rem;
 }
 
-.content :nth-child(2) {
+.hero-grid :nth-child(2) {
   font-size: 4rem;
   color: aqua;
 }
 
-.content :nth-child(2) span {
+.hero-grid :nth-child(2) span {
   font-size: 4rem;
 }
 
-.content .btn-box {
+.hero-grid .btn-box {
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 8rem;
   height: 3rem;
-  margin: 2rem 0 0 4rem;
   border: 1px solid aqua;
   border-radius: 8px;
   transition: 1s ease;
 }
 
-.content .btn-box:hover {
+.hero-grid .btn-box:hover {
   background-color: aqua;
 }
 
-.main .btn-box a {
+.hero .btn-box a {
   font-size: 20px;
   color: white;
 }
@@ -140,7 +159,7 @@ section {
   color: aqua;
 }
 
-.main h2 {
+.hero h2 {
   font-family: "Roboto", sans-sans-serif;
   color: white;
   margin: 20px 0px 0px;
@@ -148,7 +167,7 @@ section {
   padding: 10px 0 0 50px;
 }
 
-.main h3 {
+.hero h3 {
   color: white;
   font-size: 25px;
   margin-bottom: 50px;
@@ -156,7 +175,7 @@ section {
   font-family: "Roboto", sans-sans-serif;
 }
 
-.main h4 {
+.hero h4 {
   font-family: "Roboto", sans-sans-serif;
   color: aqua;
   letter-spacing: 2px;
@@ -169,35 +188,36 @@ h2 span {
   font-family: "Roboto", sans-sans-serif;
 }
 
+/* about section */
+
 .about {
   width: 100%;
   margin: auto;
   color: white;
 }
-.about-wrapper {
+.about-grid {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 50px;
   width: 100%;
 }
 
-.about-wrapper .left {
+.about-grid .left {
   display: flex;
   flex: 1 0 35%;
   height: 25rem;
 }
 
-.about-wrapper .left img {
+.about-grid .left img {
   width: 100%;
   background-color: transparent;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White shadow */
   transition: transform 0.3s ease-in-out;
 }
 
-.about-wrapper .right {
+.about-grid .right {
   flex: 1 0 60%;
 }
 
@@ -254,17 +274,28 @@ h2 span {
   font-weight: 600;
 }
 
-.title {
-  text-align: center;
-  font-size: 1.5rem;
+.tab-content a {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid aqua;
+  border-radius: 8px;
+  transition: 1s ease;
 }
 
-.projects-wrapper {
+.tab-content a:hover {
+  background-color: aqua;
+}
+
+/* Projects Section */
+
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 50px;
-  width: 100%;
 }
 
 .image-container {
@@ -288,11 +319,7 @@ h2 span {
   color: white;
 }
 
-.project-info {
-}
-
 .project-info p {
-  padding: 0 1rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -328,55 +355,79 @@ h2 span {
   color: aqua;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  flex-wrap: wrap;
-  margin: 2rem auto;
-}
-
-.services {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-  color: white;
-}
-
-.services h1 {
-  font-size: 4rem;
-}
-
-.services_row {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-col {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 300px;
+.project-card {
   background: linear-gradient(145deg, #23272a, #2a2e32);
-  margin-bottom: 5%;
-  padding: 1rem;
-  box-sizing: border-box;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.service-col h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.service-col i {
-  font-size: 2rem;
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.project-links a {
+  gap: 0.5rem;
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Services Section */
+.services {
+  padding: 5rem 10%;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(145deg, #23272a, #2a2e32);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: #007bff;
   margin-bottom: 1rem;
-  color: darkgoldenrod;
 }
 
 .contact {
@@ -396,7 +447,6 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 0 0 0;
 }
 
 .contact_content {
