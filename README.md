@@ -1,5 +1,9 @@
 # Portfolio Website
 
+![Portfolio Website](https://obande.netlify.app)
+
+## Description
+
 This is a personal portfolio website showcasing projects, skills, and services offered by Tom Obande, a Web/App Developer. The website is designed to be responsive and user-friendly, providing visitors with an overview of Tom's work and experience.
 
 ## Table of Contents
@@ -9,7 +13,7 @@ This is a personal portfolio website showcasing projects, skills, and services o
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Contact](#contact)
-
+- [Group Members](#group-members)
 
 ## Features
 
@@ -60,3 +64,10 @@ For any inquiries or freelance opportunities, you can reach out via:
 - **LinkedIn**: [Tom Brown](https://www.linkedin.com/in/tom-brown-13811a1a8)
 - **WhatsApp**: [+254794687383](https://wa.me/254794687383)
 
+## Group Members
+
+1. **[Hillary Kiprotich](https://github.com/Machuge27/SWEngineering/tree/main/Hackathos/Portfolio)**
+2. **[Hassan Khalifa](https://github.com/Faruq-Feroz/Hassan-Faruq)**
+3. **Saddam Saku**
+4. **Rashid said**
+5. **[Tom Obande](https://github.com/tbrowns/portfolio)**

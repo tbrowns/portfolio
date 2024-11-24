@@ -4,15 +4,21 @@ const close = document.getElementById("close"); // Get the menu close button ele
 
 const nava = document.getElementById("header"); // Get the header element
 
-const links = document.querySelectorAll("#link"); // Get all elements with the ID 'link'
+const links = document.querySelectorAll("#nav-link"); // Get all elements with the ID 'link'
 
 const tab_links = document.querySelectorAll(".tab-links"); // Get all elements with the class 'tab-links'
 const tab_contents = document.querySelectorAll(".tab-content"); // Get all elements with the class 'tab-content'
 
-// Add click event listener to each link to close the menu
+AOS.init();
+
+// Add click event listener to each link
 links.forEach((link) => {
   link.addEventListener("click", () => {
-    menu.style.left = "100%"; // Move menu out of view
+    if (close.style.display == "block") closemenu(); // Close the menu if it's open
+    links.forEach((link) => {
+      link.classList.remove("active-nav-link"); // Remove active class from all nav links
+    });
+    link.classList.add("active-nav-link"); // Add active class to clicked nav link
   });
 });
 
