@@ -69,5 +69,7 @@ For any inquiries or freelance opportunities, you can reach out via:
 1. **[Hillary Kiprotich](https://github.com/Machuge27/SWEngineering/tree/main/Hackathos/Portfolio)**
 2. **[Hassan Khalifa](https://github.com/Faruq-Feroz/Hassan-Faruq)**
 3. **Saddam Saku**
-4. **Rashid said**
+4. **[Rashid said](https://github.com/SirRasheed/portfoliorasheed.git)**
 5. **[Tom Obande](https://github.com/tbrowns/portfolio)**
+6. Alexander Brian
+7. **[Zachariah Evans](https://github.com/Eva254-ke/myportfolio)**

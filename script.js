@@ -72,6 +72,12 @@ tab_links.forEach((tab_link) => {
 // Initialize EmailJS with your User ID
 emailjs.init({
   publicKey: "qMHmY9ldVNVeksvn2", // Your EmailJS public key
+  limitRate: {
+    // Set the limit rate for the application
+    id: "app",
+    // Allow 1 request per 10s
+    throttle: 15000,
+  },
 });
 
 // Function to send email
