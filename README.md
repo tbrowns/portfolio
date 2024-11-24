@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Portfolio Website](https://obande.netlify.app)
+[Portfolio Website](https://obande.netlify.app)
 
 ## Description
 
