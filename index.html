@@ -11,15 +11,17 @@
   </title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- background art -->
   <div class="bg-art-wrapper"><div class="bg-art"></div></div>
 
+  <!-- header -->
   <header class="header" id="header">
     <div class="logo">
       <p>t<span>browns</p>
@@ -31,19 +33,24 @@
       <a id='nav-link' href="#services">Services</a>
       <a id='nav-link' href="#contact">Contact</a>
     </div>
+
+    <!-- Mobile Menu Icon -->
     <div class="icon">
       <ion-icon name="menu-outline" id="menu-btn" onclick="openmenu()"></ion-icon>
       <ion-icon name="close-outline" id="close" onclick="closemenu()"></ion-icon>
     </div>
   </header>
 
+  <!-- hero section -->
   <section class="hero" id="home"> 
     <div class="hero-grid">
       <div class="profile-content" data-aos="zoom-in-right" data-aos-duration="1000">
+        <!-- image -->
         <div class='profile-image'   >
           <img src="assets/images/profile.png">
         </div>
       </div>
+      <!-- content -->
       <div class="hero-content">
         <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700" >Tom Obande</h1>
         <h2 >I am 
@@ -63,10 +70,12 @@
     </div>
 
   </section>
-
+  
+  <!-- About Section -->
   <section class="about" id="about">
     <div class="section-title">ABOUT ME</div>
     <div class="about-grid">
+      <!-- Bio -->
       <div class="left">
         <div class="bio-description">
           <p>
@@ -78,6 +87,7 @@
           </p>
         </div>
       </div>
+      <!-- Education, Interests, Skills tabs -->
       <div class="right">
         <div class="tabs-wrapper">
           <div class="tab-titles">
@@ -91,7 +101,7 @@
             <ul>
               <li>
                 <span>2024</span><br>
-                IBM Data Science Practitioner
+                IBM Data Science Practitioner Course
                 <br>
                 <small>Data Science Practitioner Certificate <a href="assets/Data_Science_Practitioner_Certificate_Badge.pdf"> View</a></small>
               </li>
@@ -111,6 +121,7 @@
                 <small>Graduated with a B plus</small>
               </li>
             </ul>
+            <!-- Download CV  -->
             <a href="assets/ONYANGO TOM-CV.pdf" class="download-btn" download="assets/ONYANGO TOM-CV.pdf">
               Download CV  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
             </a>
@@ -141,22 +152,24 @@
 
               <li>
                 <span>Development and Operations</span><br>
-                Version control with Git/Github, containerization with Docker, and experience with CI/CD pipelines
+                Version control with Git/Github, containerization with Docker.
               </li>
             </ul>
           </div>
       </div>
     </div>
-</section>
+  </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="section-title">PROJECTS</div>
     
     <div class="project-grid">
         <!-- Project cards will be dynamically inserted here by JavaScript -->
     </div>
-</section>
+  </section>
 
+  <!-- Services Section -->
   <section class="services" id="services">
     <div class="section-title">SERVICES</div>
 
@@ -179,6 +192,7 @@
   </div>
   </section>
 
+  <!-- Contact Section -->
   <section class="contact">
       <div class="section-title">CONTACT</div>
 
@@ -187,7 +201,7 @@
           <div class="contact_content_img">
             <img src="assets/images/contact-3018.png">
           </div>
-        <h1>Tom Brown</h1>
+        <h1>Tom Obande</h1>
         <span>Software Engineer</span><br><br>
         I am available for freelance work. Contact me anytime via my social media accounts
         </span></p><br>
@@ -213,7 +227,8 @@
 
       </div>
       </div>
-
+      
+      <!-- contact form -->
       <div class="form">
         <form>
           <label> your name</label><br>
@@ -248,8 +263,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomudule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
