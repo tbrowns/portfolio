@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Portfolio Website](https://obande.netlify.app)
+[Portfolio Website](https://obande.netlify.app)
 
 ## Description
 
@@ -38,13 +38,13 @@ This is a personal portfolio website showcasing projects, skills, and services o
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/tbrowns/portfolio.git
    ```
 
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd portfolio-website
+   cd portfolio
    ```
 
 3. **Open `index.html` in a Web Browser**:
