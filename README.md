@@ -71,5 +71,6 @@ For any inquiries or freelance opportunities, you can reach out via:
 3. **Saddam Saku**
 4. **[Rashid said](https://github.com/SirRasheed/portfoliorasheed.git)**
 5. **[Tom Obande](https://github.com/tbrowns/portfolio)**
-6. Alexander Brian
+6. \*\*[Alexander Brian](https://github.com/BrianKachumba/Hackathon1.git)
 7. **[Zachariah Evans](https://github.com/Eva254-ke/myportfolio)**
+8. [Joshua Ogallo](https://github.com/ogallj/my_portfolio)

@@ -119,6 +119,7 @@ section {
   align-items: center;
 }
 
+/* image wrapper */
 .profile-content {
   position: relative;
   width: 28vw;
@@ -150,6 +151,7 @@ section {
   animation-delay: -4s;
 }
 
+/* spinning animation */
 @keyframes border-rotate {
   0% {
     transform: rotate(0deg);
@@ -167,7 +169,7 @@ section {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background-color: #212428;
+  background-color: #252a30;
   border: 0.1px solid #212428;
   z-index: 1;
 }
@@ -185,10 +187,12 @@ section {
   height: 100%;
 }
 
+/* Name */
 .hero-content h1 {
   font-size: 50px;
 }
 
+/* Specialites */
 .hero-content h2 {
   display: inline-block;
   font-size: 30px;

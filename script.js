@@ -130,12 +130,21 @@ document.querySelector(".form").addEventListener("submit", sendEmail); // Attach
 // Projects data
 const projects = [
   {
+    title: "Ecommerce App",
+    description:
+      "VendorConnect is a cutting-edge Next JS e-commerce platform designed to empower vendors by providing a centralized portal to list, manage, and sell their products/services efficiently.",
+    image: "assets/images/vendor-connect-preview.png",
+    techStack: ["Next", "TypeScript", "Supabase"],
+    github: "https://github.com/tbrowns/e-commerce",
+    demo: "https://e-commerce-seven-navy-16.vercel.app/",
+  },
+  {
     title: "Wine Store Management App",
     description:
       "A Firebase-powered wine and spirit store management application",
     image: "assets/images/wine-app-preview.png",
     techStack: ["HTML", "Firebase", "JavaScript"],
-    github: "https://github.com/tbrowns/tax-calculator/",
+    github: "https://github.com/tbrowns/wines-spirits",
     demo: "https://winesapp.netlify.app/",
   },
   {
@@ -144,15 +153,6 @@ const projects = [
     image: "assets/images/moscore-preview.png",
     techStack: ["Next.js", "Tailwind", "Supabase", "TypeScript"],
     github: "https://github.com/tbrowns/moscore-web-app.git",
-    demo: "#",
-  },
-  {
-    title: "Tax Calculator App",
-    description:
-      "A React-based tax calculator application for East African Countries",
-    image: "assets/images/calc-preview.png",
-    techStack: ["React", "Tailwind", "JavaScript"],
-    github: "https://github.com/tbrowns/tax-calculator.git",
     demo: "#",
   },
 ];
