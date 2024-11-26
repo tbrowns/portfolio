@@ -136,7 +136,7 @@ const projects = [
     image: "assets/images/vendor-connect-preview.png",
     techStack: ["Next", "TypeScript", "Supabase"],
     github: "https://github.com/tbrowns/e-commerce",
-    demo: "https://e-commerce-seven-navy-16.vercel.app/",
+    demo: "https://vendor-connect-delta.vercel.app/",
   },
   {
     title: "Wine Store Management App",
@@ -162,6 +162,13 @@ const projectGrid = document.querySelector(".project-grid");
 projects.forEach((project) => {
   const projectCard = document.createElement("div");
   projectCard.classList.add("project-card");
+  projectCard.setAttribute("data-aos", "fade-up");
+  projectCard.setAttribute("data-aos-duration", "750");
+  projectCard.setAttribute(
+    "data-aos-delay",
+    `${projects.indexOf(project) * 50 + 50}`
+  );
+
   projectCard.innerHTML = `
           <img src="${project.image}" alt="${
     project.title
