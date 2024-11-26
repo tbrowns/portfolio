@@ -251,7 +251,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7rem;
+  width: 9rem;
   height: 3rem;
   border: 1px solid aqua;
   border-radius: 8px;
@@ -635,7 +635,11 @@ section {
   border-radius: 5px;
   background: #191b1e;
   box-shadow: inset 7px 7px 12px #17191c, inset -7px -7px 12px #1b1d20;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+.form form input:not([type="email"]) {
+  text-transform: uppercase;
 }
 
 .form form textarea {
@@ -646,7 +650,7 @@ section {
   border-radius: 5px;
   background: #191b1e;
   box-shadow: inset 7px 7px 12px #17191c, inset -7px -7px 12px #1b1d20;
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -661,7 +665,7 @@ section {
   background: #191b1e;
   box-shadow: inset 7px 7px 12px #17191c, inset -7px -7px 12px #1b1d20;
   font-size: 1.5rem;
-  text-transform: uppercase;
+
   color: white;
 }
 
