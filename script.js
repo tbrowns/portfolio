@@ -134,7 +134,13 @@ const projects = [
     description:
       "VendorConnect is a cutting-edge Next JS e-commerce platform designed to empower vendors by providing a centralized portal to list, manage, and sell their products/services efficiently.",
     image: "assets/images/vendor-connect-preview.png",
-    techStack: ["Next", "TypeScript", "Supabase"],
+    techStack: [
+      "<image src='assets/icons/ts.svg'/>",
+      "<image src='assets/icons/tail.svg'/>",
+      "<image src='assets/icons/next.svg'/>",
+      "<image src='assets/icons/c.svg'/>",
+      "<image src='assets/icons/sb.svg'/>",
+    ],
     github: "https://github.com/tbrowns/e-commerce",
     demo: "https://vendor-connect-delta.vercel.app/",
   },
@@ -143,15 +149,26 @@ const projects = [
     description:
       "A Firebase-powered wine and spirit store management application",
     image: "assets/images/wine-app-preview.png",
-    techStack: ["HTML", "Firebase", "JavaScript"],
+    techStack: [
+      "<image src='assets/icons/HTML.svg'/>",
+      "<image src='assets/icons/firebase.svg'/",
+      "<image src='assets/icons/javascript.svg'/>",
+    ],
     github: "https://github.com/tbrowns/wines-spirits",
     demo: "https://winesapp.netlify.app/",
   },
   {
     title: "RAG Application",
-    description: "A Next.js application for file upload and chat functionality",
+    description:
+      "Moscore is a Next.js application for file upload and an AI learning assistant that enables users to chat with files.",
     image: "assets/images/moscore-preview.png",
-    techStack: ["Next.js", "Tailwind", "Supabase", "TypeScript"],
+    techStack: [
+      "<image src='assets/icons/ts.svg'/>",
+      "<image src='assets/icons/tail.svg'/>",
+      "<image src='assets/icons/next.svg'/>",
+      "<image src='assets/icons/c.svg'/>",
+      "<image src='assets/icons/sb.svg'/>",
+    ],
     github: "https://github.com/tbrowns/moscore-web-app.git",
     demo: "#",
   },
@@ -175,22 +192,30 @@ projects.forEach((project) => {
   }" class="project-image"/>
           <div class="project-info">
               <h3>${project.title}</h3>
-              <p>${project.description}</p>
-              <p class="tech-stack">
+              <p style="height:5rem;">${project.description}</p>
+              <div class="tech-stack">
+                  
                   ${project.techStack
-                    .map((tech) => `<span>${tech}</span>`)
+                    .map(
+                      (tech, index) =>
+                        `<p class="icon-container" style="transform: translateX(-${
+                          5 * index + 2
+                        }px);">${tech}</p>`
+                    )
                     .join(" ")}
-              </p>
+                
+              </div>
               <div class="project-links">
                   <a href="${project.github}" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="aqua" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                    GitHub
+                    Code
                     </a>
                   <a href="${project.demo}" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="aqua" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
-                    Live Demo
+                     Demo
                   </a>
               </div>
+            
           </div>
       `;
   projectGrid.appendChild(projectCard);

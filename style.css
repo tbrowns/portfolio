@@ -429,14 +429,21 @@ section {
 }
 
 .tech-stack {
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.tech-stack span {
-  padding: 0.25rem 0.75rem;
-  background-color: gray;
+.icon-container {
+  background: linear-gradient(145deg, #0f1111, #2c3033);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  padding: 0.5rem;
 }
 
 .view-project {
@@ -485,8 +492,7 @@ section {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .project-links a {
@@ -600,18 +606,7 @@ section {
   padding: 1rem;
 }
 
-.contact_content ion-icon {
-  font-size: 1.5rem;
-  border-radius: 5px;
-  padding: 0.75rem;
-  background: linear-gradient(145deg, #0f1111, #2c3033);
-  box-shadow: 14px 14px 57px #222527, -14px -14px 57px #0f1111;
-  opacity: 0.5;
-  color: white;
-}
-
-.contact_content ion-icon:hover {
-  color: aqua;
+.contact_content .icon-container:hover {
   cursor: pointer;
   transform: translateY(-5px);
 }
@@ -695,6 +690,21 @@ footer div {
 footer span {
   color: aqua;
   border-bottom: 2px solid aqua;
+}
+
+/* Responsive sizing */
+@media (min-width: 1024px) {
+  .icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .icon-container {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
