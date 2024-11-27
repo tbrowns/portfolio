@@ -695,15 +695,15 @@ footer span {
 /* Responsive sizing */
 @media (min-width: 1024px) {
   .icon-container {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
 
 @media (max-width: 1023px) {
   .icon-container {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
